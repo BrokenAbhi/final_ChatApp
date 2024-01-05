@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Chat App</title>
+</head>
+<body>
+ 
+  <div class="main">
+  <div id="user-list-container">
+    <div id="search-container">
+      <input type="text" id="user-search" placeholder="Search User...">
+    </div>
+    <div id="user-list"></div>
+  </div>
+  
+  <div id="chat-container">
+    <div id="chat-messages">
+      <div class="icon-container">
+        <div class="left-icon">
+          
+        </div>
+        <div class="right-icon">
+          <i id="call" class="ri-phone-line"></i>
+          <i id="video" class="ri-vidicon-line"></i>
+        </div>
+      </div>
+    </div>
+    <input type="text" id="message-input" placeholder="Type your message...">
+    <!-- <button onclick="sendMessage()">Send</button> -->
+    <i id="send" onclick="sendMessage()" class="ri-send-plane-2-fill"></i>
+  </div>
+  </div>
+ 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
